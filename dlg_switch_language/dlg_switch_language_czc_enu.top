@@ -1,0 +1,37 @@
+topic: ~dlg_switch_language_czc()
+language: enu
+
+include:lexicon_enu.top
+
+u:($empty) %switch_language
+^run(dialog_simple_czc/bhr_switch_language)
+
+#==================================================================#
+# Switch to Czech language
+#==================================================================#
+
+u:(~ald_robots {~can_you} speak {in} czech)
+^first[
+    "$Dialog/Language/LangCzech==1 Let's speak Czech!  $Dialog/SwitchLanguage=czech ^gotoReactivate(switch_language)"
+    "Sorry, I don't know how to speak Czech."
+]
+
+u:({~can_you} speak {in} czech)
+^first[
+    "$Dialog/Language/LangCzech==1 Do you want to speak Czech?"
+    "Sorry, I don't know how to speak Czech. ^releaseFocus"
+]
+
+    u1:(~yes)
+    Okay, let's speak Czech! $Dialog/SwitchLanguage=czech
+    ^gotoReactivate(switch_language_czc)
+    
+    u1:(~no)
+    Okay, let me know if you want to speak Czech later on.
+    
+#------------------------------------------------------------------#
+u:({~can_you} [talk speak] {in} slovak)
+^first[
+    "$Dialog/Language/LangSlovak==1 Sorry, I don't have any Slovak topics installed at the moment."
+    "Sorry, I don't know how to speak Slovak."
+]

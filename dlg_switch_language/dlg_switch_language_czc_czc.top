@@ -1,0 +1,16 @@
+topic: ~dlg_switch_language_czc()
+language: czc
+
+u:($empty) %switch_language
+^run(dialog_simple_czc/bhr_switch_language)
+
+#==================================================================#
+# Switch to English language
+#==================================================================#
+
+u:(mluv anglicky)
+^first[
+    "$Dialog/Language/LangEnglish==1 Dobře, budu mluvit anglicky! $Dialog/SwitchLanguage=english ^gotoReactivate(switch_language)"
+    "Hm, bohužel anglicky neumím."
+]
+

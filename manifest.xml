@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<package version="0.0.1" uuid="dialog_simple_czc">
+ <names>
+  <name lang="en_US">dialog_simple_czc</name>
+  <name lang="cs_CZ">dialog_simple_czc</name>
+ </names>
+ <descriptions>
+  <description lang="en_US">A simple app consisting of a collaborative dialogue talking to a service.</description>
+  <description lang="cs_CZ">A simple app consisting of a collaborative dialogue talking to a service.</description>
+ </descriptions>
+ <supportedLanguages>
+  <language>cs_CZ</language>
+  <language>en_US</language>
+ </supportedLanguages>
+ <descriptionLanguages>
+  <language>en_US</language>
+  <language>cs_CZ</language>
+ </descriptionLanguages>
+ <contents>
+  <behaviorContent path="bhr_switch_language">
+   <nature>interactive</nature>
+   <permissions/>
+  </behaviorContent>
+  <dialogContent topicName="dlg_switch_language_czc" typeVersion="1.0">
+   <topic language="cs_CZ" path="dlg_switch_language/dlg_switch_language_czc_czc.top"/>
+   <topic language="en_US" path="dlg_switch_language/dlg_switch_language_czc_enu.top"/>
+  </dialogContent>
+ </contents>
+ <requirements>
+  <naoqiRequirement minVersion="2.3"/>
+  <robotRequirement model="JULIETTE"/>
+ </requirements>
+</package>
