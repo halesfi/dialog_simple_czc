@@ -1,6 +1,12 @@
 topic: ~dlg_switch_language_czc()
 language: czc
 
+#dynamic:robotname
+#dynamic:myrobotname
+
+u:(e:Dialog/Language/Czech)
+Teď mluvím česky.
+
 u:($empty) %switch_language
 ^run(dialog_simple_czc/bhr_switch_language)
 
@@ -14,3 +20,12 @@ u:(mluv anglicky)
     "Hm, bohužel anglicky neumím."
 ]
 
+u:(ahoj) ahoj
+
+u:(jak se máš)
+    já se mám suprově
+
+u:(jak se jmenuješ)
+    já jsem Karel Pepr
+
+proposal: to máme dneska hezky

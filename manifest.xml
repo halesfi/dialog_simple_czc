@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<package version="0.0.1" uuid="dialog_simple_czc">
+<package version="0.1.2" uuid="dialog_simple_czc">
  <names>
-  <name lang="en_US">dialog_simple_czc</name>
   <name lang="cs_CZ">dialog_simple_czc</name>
+  <name lang="en_US">dialog_simple_czc</name>
  </names>
  <descriptions>
-  <description lang="en_US">A simple app consisting of a collaborative dialogue talking to a service.</description>
   <description lang="cs_CZ">A simple app consisting of a collaborative dialogue talking to a service.</description>
+  <description lang="en_US">A simple app consisting of a collaborative dialogue talking to a service.</description>
  </descriptions>
  <supportedLanguages>
   <language>cs_CZ</language>
@@ -18,12 +18,19 @@
  </descriptionLanguages>
  <contents>
   <behaviorContent path="bhr_switch_language">
+   <userRequestable/>
    <nature>interactive</nature>
+   <tags>
+    <tag lang="en_US">dialog</tag>
+   </tags>
+   <triggerSentences/>
+   <loadingResponses/>
+   <autonomous/>
    <permissions/>
   </behaviorContent>
   <dialogContent topicName="dlg_switch_language_czc" typeVersion="1.0">
-   <topic language="cs_CZ" path="dlg_switch_language/dlg_switch_language_czc_czc.top"/>
-   <topic language="en_US" path="dlg_switch_language/dlg_switch_language_czc_enu.top"/>
+   <topic path="dlg_switch_language_czc/dlg_switch_language_czc_czc.top" language="cs_CZ"/>
+   <topic path="dlg_switch_language_czc/dlg_switch_language_czc_enu.top" language="en_US"/>
   </dialogContent>
  </contents>
  <requirements>
