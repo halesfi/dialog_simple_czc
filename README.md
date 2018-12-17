@@ -8,9 +8,9 @@ The application contains two simple dialogs - English and Czech ones. Czech is a
 
 This application allows to start creating new dialogs in Czech and to ask Pepper to use them by switching to Czech when talking.
 
-# Example dialog:
+# Example dialog
 
-Pepper is in English by default:
+Pepper is in English by default.
 * **User**: *Pepper Speak Czech* - this command usually does not work, as the same command is covered by the system dialogues, which say that there are no dialogs for Czech available. This was solved by the following workaround.
 * **User**: *Mluv česky* - this is actually the Czech equivalent for "Speak Czech". The English ASR engine contains this command in the "phonetic" form as *mloof cheski* and it works `:-)`
 * **Pepper**: *Let's speak Czech!*
